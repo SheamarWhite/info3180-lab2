@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block main %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="{{ url_for('static' , filename='css\app.css') }}" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="info">
+    <img src= " {{ url_for('static', filename='Max.jpg')}}" />
+    <!--img src = "\\wsl.localhost\Ubuntu\home\sheam2002\info3180\info3180-lab2\app\static\Max.jpg" /-->
+    <h2 class="text" class="name">Sheamar White</h2>
+    <h4 class="text">@sheam</h4>
+    <h4 class="text">St.Catherine, Jamaica</h4>
+    <h4 class="text">Joined: {{ now }}</h4>
+</div>
+<p>I am an intelligent indivdual who is greatly intrested in the development of video games. Let me know if you'd be intrested in working togteher on a project.</p>
+<div class="numbers">
+    <div class="nums">
+        <h4 class="txt">12</h4>
+        <h4 class="txt">200</h4>
+        <h4 class="txt">3200</h4>
+    </div>
+
+    <div class="mumbs">
+        <p class="sub">Posts</p>
+        <p class="sub">Following</p>
+        <p class="sub">Followers</p>
+    </div>
+</div>
+<button class="button">Follow</button>
+
+</body>
+</html>
+{% endblock %}
